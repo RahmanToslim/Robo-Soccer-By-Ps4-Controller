@@ -125,9 +125,9 @@ void notify() {
     else if (PS4.LStickY() > 0) {
       Serial.println("Shamnee jao bhai");
       Serial.println(rightMotorSpeed);
-      ledcWrite(R1, leftMotorSpeed);
+      ledcWrite(R1, rightMotorSpeed);
       ledcWrite(R2, 0);
-      ledcWrite(L1, -rightMotorSpeed);
+      ledcWrite(L1, rightMotorSpeed);
       ledcWrite(L2, 0);
 
     
