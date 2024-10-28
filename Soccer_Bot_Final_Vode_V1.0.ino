@@ -132,6 +132,11 @@ void notify() {
 
     
     }
+  else if (PS4.LStickY() == 0 && PS4.RStickX() == 0) {
+      ledcWrite(R1, 0);
+      ledcWrite(R2, 0);
+      ledcWrite(L1, 0);
+      ledcWrite(L2, 0);
 
 
    
